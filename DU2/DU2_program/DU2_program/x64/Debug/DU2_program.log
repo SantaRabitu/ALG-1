@@ -1,0 +1,4 @@
+﻿  ShakerSort.cpp
+C:\Users\lukas\OneDrive\Počítač\VSB\Algoritmy\DU2 program\DU2_program\DU2_program\ShakerSort.cpp(104,8): warning C4267: inicializování: Převod z: size_t na: int, může dojít ke ztrátě dat.
+C:\Users\lukas\OneDrive\Počítač\VSB\Algoritmy\DU2 program\DU2_program\DU2_program\ShakerSort.cpp(150,14): warning C4267: inicializování: Převod z: size_t na: int, může dojít ke ztrátě dat.
+  DU2_program.vcxproj -> C:\Users\lukas\OneDrive\Počítač\VSB\Algoritmy\DU2 program\DU2_program\x64\Debug\DU2_program.exe
