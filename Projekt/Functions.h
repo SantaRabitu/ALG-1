@@ -26,9 +26,9 @@ using std::ifstream;
 //fstream nazov_suboru;
 
 /**
-*@brief Funkcia PrintVector slúi na vypísanie obsahu vektora.
-* Zíde sa nám hlavne na kontrolu.
-* @param vektor_cisel  Vektor_cisel je parameter, ktory slúi na uchovavanie vektoru, ktory chceme vypísat.
+*@brief Funkcia PrintVector slÃºÅ¾i na vypÃ­sanie obsahu vektora.
+* ZÃ­de sa nÃ¡m hlavne na kontrolu.
+* @param vektor_cisel  Vektor_cisel je parameter, ktory slÃºÅ¾i na uchovavanie vektoru, ktory chceme vypÃ­sat.
 */
 void PrintVector(vector<long>& vektor_cisel) {
 
@@ -40,9 +40,9 @@ void PrintVector(vector<long>& vektor_cisel) {
 }
 
 /**
-* @brief Funkcia AddVector nám slúi na vloenie vektoru do súboru v takom tvare, akı spåòa aj testovací súbor.
-* @param vektor_cisel Vektor_cisel je referencia na vektor, ktory sa bude vklada do súboru.
-* @param subor Subor slui ako referencia na súbor do ktorého sa bude vklada.
+* @brief Funkcia AddVector nÃ¡m slÃºÅ¾i na vloÅ¾enie vektoru do sÃºboru v takom tvare, akÃ½ spÄºÅˆa aj testovacÃ­ sÃºbor.
+* @param vektor_cisel Vektor_cisel je referencia na vektor, ktory sa bude vkladaÅ¥ do sÃºboru.
+* @param subor Subor sluÅ¾i ako referencia na sÃºbor do ktorÃ©ho sa bude vkladaÅ¥.
 */
 void AddVector(vector<long>& vektor_cisel,fstream &subor) {
 
@@ -52,10 +52,10 @@ void AddVector(vector<long>& vektor_cisel,fstream &subor) {
 }
 
 /**
-* @brief Funkcia VytvoritSubor slúi na vytvorenie súboru.
-* Vyuíva funkciu AddVector() na zápis vektoru do súboru.
-* @param subor_txt Slúi na vloenie konkretného  názvu textového súboru, kde sa bude mnoina uklada.
-* @param set Obsahuje mnoinu, ktorá sa uloí.
+* @brief Funkcia VytvoritSubor slÃºÅ¾i na vytvorenie sÃºboru.
+* VyuÅ¾Ã­va funkciu AddVector() na zÃ¡pis vektoru do sÃºboru.
+* @param subor_txt SlÃºÅ¾i na vloÅ¾enie konkretnÃ©ho  nÃ¡zvu textovÃ©ho sÃºboru, kde sa bude mnoÅ¾ina ukladaÅ¥.
+* @param set Obsahuje mnoÅ¾inu, ktorÃ¡ sa uloÅ¾Ã­.
 
 */
 
@@ -73,13 +73,13 @@ void VytvoritSubor(const string& subor_txt, vector<long> set) {
 
 }
 /**
-* @brief Funkcia StringToVector zabezpeèi, e prevedie naèitany reazec znakov do vektora èísel.
-* Istringstream vytvára virtuálny reazcovı prúd, ktorı umoòuje pohodlné èítanie dát z reazca, ktorı je u k dispozícii v pamäti.
-* Funkciu pouivam kvôli tomu, e nemusi by vdy isté, e na riadku je èíslo. zároveò to pre mòa slúi aj ako zjednodušenie a potvrdenie, e skutoène pracujem 
-*	s vektorom longov a nie s reazcami.
-* >>je operator na èitanie z reazca (token je prave naèitany riadok suboru   -retazec-).
-* @param subor_txt Slúi ako referencia na názov textového súboru z ktorého sa budu èerpa znaky.
-* @param cisla Slúi ako referencia na vektor, do ktorého sa budú vkláda u takımto spôsobom vybrané èísla (push_back)
+* @brief Funkcia StringToVector zabezpeÄi, Å¾e prevedie naÄitany reÅ¥azec znakov do vektora ÄÃ­sel.
+* Istringstream vytvÃ¡ra virtuÃ¡lny reÅ¥azcovÃ½ prÃºd, ktorÃ½ umoÅ¾Åˆuje pohodlnÃ© ÄÃ­tanie dÃ¡t z reÅ¥azca, ktorÃ½ je uÅ¾ k dispozÃ­cii v pamÃ¤ti.
+* Funkciu pouÅ¾ivam kvÃ´li tomu, Å¾e nemusi byÅ¥ vÅ¾dy istÃ©, Å¾e na riadku je ÄÃ­slo. zÃ¡roveÅˆ to pre mÅˆa slÃºÅ¾i aj ako zjednoduÅ¡enie a potvrdenie, Å¾e skutoÄne pracujem 
+*	s vektorom longov a nie s reÅ¥azcami.
+* >>je operator na Äitanie z reÅ¥azca (token je prave naÄitany riadok suboru   -retazec-).
+* @param subor_txt SlÃºÅ¾i ako referencia na nÃ¡zov textovÃ©ho sÃºboru z ktorÃ©ho sa budu ÄerpaÅ¥ znaky.
+* @param cisla SlÃºÅ¾i ako referencia na vektor, do ktorÃ©ho sa budÃº vklÃ¡daÅ¥ uÅ¾ takÃ½mto spÃ´sobom vybranÃ© ÄÃ­sla (push_back)
 */
 
 void StringToVectorLong(const string& subor_txt, vector<long>& cisla) {
@@ -94,11 +94,11 @@ void StringToVectorLong(const string& subor_txt, vector<long>& cisla) {
 }
 
 /**
-*@brief Táto funkcia NacitatSubor je súèas upraveného súboru. Úplne prvotná funkcia.
-*Zaroveò si pomocou neho vieme overi napriklad rozdiel mnoin vïaka tomu, e nie je nijak upravovany, je len naèitany do pola longov.
-*Vyuíva aj funkciu StringToVectorLong() pre pohodlnú prácu a ¾ahšiu manipuláciu.
-* @param subor_txt Je referencia na konkrétny názov súboru (.txt), ktorı chceme naèíta.
-* @return Funkcia vracia vektor èísel naèítanıch zo súboru...je teda pripravená na to, e sa dá vloi do nejakej premeny pre pohodlné operácie.
+*@brief TÃ¡to funkcia NacitatSubor je sÃºÄasÅ¥ upravenÃ©ho sÃºboru. Ãšplne prvotnÃ¡ funkcia.
+*ZaroveÅˆ si pomocou neho vieme overiÅ¥ napriklad rozdiel mnoÅ¾in vÄaka tomu, Å¾e nie je nijak upravovany, je len naÄitany do pola longov.
+*VyuÅ¾Ã­va aj funkciu StringToVectorLong() pre pohodlnÃº prÃ¡cu a Ä¾ahÅ¡iu manipulÃ¡ciu.
+* @param subor_txt Je referencia na konkrÃ©tny nÃ¡zov sÃºboru (.txt), ktorÃ½ chceme naÄÃ­taÅ¥.
+* @return Funkcia vracia vektor ÄÃ­sel naÄÃ­tanÃ½ch zo sÃºboru...je teda pripravenÃ¡ na to, Å¾e sa dÃ¡ vloÅ¾iÅ¥ do nejakej premeny pre pohodlnÃ© operÃ¡cie.
 */
 
 vector<long>NacitatSubor(const string& subor_txt) {
@@ -131,8 +131,8 @@ vector<long>NacitatSubor(const string& subor_txt) {
 /*Kontrola*/
 
 /**
-*@brief Funkcia KontrolaPoctuCisel slúi len na úèely kontroly pre tvorcu programu.
-* Nijako ju ani nevyuívam vo finále. Išlo len o pokus, èi všetko správne funguje v zaèiatkoch projektu.
+*@brief Funkcia KontrolaPoctuCisel slÃºÅ¾i len na ÃºÄely kontroly pre tvorcu programu.
+* Nijako ju ani nevyuÅ¾Ã­vam vo finÃ¡le. IÅ¡lo len o pokus, Äi vÅ¡etko sprÃ¡vne funguje v zaÄiatkoch projektu.
 * @param vektor_cisel Parametrom je referencia na vektor cisel.
 */
 void KontrolaPoctuCisel(vector<long>& vektor_cisel) {
@@ -142,22 +142,22 @@ void KontrolaPoctuCisel(vector<long>& vektor_cisel) {
 }
 
 /**
-* @brief Funkcia RemoveDuplicities slúi na odstránenie rovnakıch èísel v u zoradenom vektore nejakım Sort algoritmom
-* Vhodná je pre zoradené pole, pretoe sa tam pracuje systémom porovnávania predchadzajuceho prvku s aktuálne vybranım
-* Pridávaju sa do finalneho vektora prvky, ktore su unikatne(nerovnaju sa predchadzajucim)
-* @param sorted_vector Ako parameter je referencia na u zoradenı vektor. Názov nás nabáda k tomu, aby sme tam vloili zoradenı vektor, inak to nebude pracova
-* správne.
+* @brief Funkcia RemoveDuplicities slÃºÅ¾i na odstrÃ¡nenie rovnakÃ½ch ÄÃ­sel v uÅ¾ zoradenom vektore nejakÃ½m Sort algoritmom
+* VhodnÃ¡ je pre zoradenÃ© pole, pretoÅ¾e sa tam pracuje systÃ©mom porovnÃ¡vania predchadzajuceho prvku s aktuÃ¡lne vybranÃ½m
+* PridÃ¡vaju sa do finalneho vektora prvky, ktore su unikatne(nerovnaju sa predchadzajucim)
+* @param sorted_vector Ako parameter je referencia na uÅ¾ zoradenÃ½ vektor. NÃ¡zov nÃ¡s nabÃ¡da k tomu, aby sme tam vloÅ¾ili zoradenÃ½ vektor, inak to nebude pracovaÅ¥
+* sprÃ¡vne.
 */
 void RemoveDuplicities( vector<long>& sorted_vector) {
 	vector<long> final_vector;
 	
 
 	
-	final_vector.push_back(sorted_vector[0]); // Prida prvı prvok do vıstupného vektoru
+	final_vector.push_back(sorted_vector[0]); // Prida prvÃ½ prvok do vÃ½stupnÃ©ho vektoru
 	long n = sorted_vector.size();
-	// Prejdi cez zvyšné prvky vstupného vektoru
+	// Prejdi cez zvyÅ¡nÃ© prvky vstupnÃ©ho vektoru
 	for (long i = 1; i < n; i++) {
-		// Ak sa aktuálny prvok nerovna predchádzajúcemu, prida ho do vıstupného vektoru
+		// Ak sa aktuÃ¡lny prvok nerovna predchÃ¡dzajÃºcemu, prida ho do vÃ½stupnÃ©ho vektoru
 		if (sorted_vector[i] != sorted_vector[i - 1]) {
 			final_vector.push_back(sorted_vector[i]);
 		}
@@ -169,10 +169,10 @@ void RemoveDuplicities( vector<long>& sorted_vector) {
 
 
 /**
-* @brief Funkcia UpravenySubor je hlavna funkcia, ktorej telo tvoria funkcie dostavajuce súbor do idealného stavu pre náš úèel. Máme prostredníctvom nej istotu, e ak do parametru zadáme názov súboru, ktorı chceme pre náš úèel upravi , tak toho skutoène dosiahneme
-	*Obsahuje všetky funkcie, ktorı postupne danı súbor upravujú.
-*@param nazov_suboru Je referencia na konkretneho (.txt) súboru, ktorı sa má upravi pre náš úèel
-* @return Funkcia vráti mnoinu s ktorou sa ïalej dajú vykonáva úèelové operácie (nás teda zaujíma prienik)
+* @brief Funkcia UpravenySubor je hlavna funkcia, ktorej telo tvoria funkcie dostavajuce sÃºbor do idealnÃ©ho stavu pre nÃ¡Å¡ ÃºÄel. MÃ¡me prostrednÃ­ctvom nej istotu, Å¾e ak do parametru zadÃ¡me nÃ¡zov sÃºboru, ktorÃ½ chceme pre nÃ¡Å¡ ÃºÄel upraviÅ¥ , tak toho skutoÄne dosiahneme
+	*Obsahuje vÅ¡etky funkcie, ktorÃ½ postupne danÃ½ sÃºbor upravujÃº.
+*@param nazov_suboru Je referencia na konkretneho (.txt) sÃºboru, ktorÃ½ sa mÃ¡ upraviÅ¥ pre nÃ¡Å¡ ÃºÄel
+* @return Funkcia vrÃ¡ti mnoÅ¾inu s ktorou sa Äalej dajÃº vykonÃ¡vaÅ¥ ÃºÄelovÃ© operÃ¡cie (nÃ¡s teda zaujÃ­ma prienik)
 */
 
 vector<long> UpravenySubor(const string& nazov_suboru) {
